@@ -435,11 +435,41 @@
                  </div>
               </div>
               <div class="col-lg-3">
+
                  <div class="right-sidebar">
                     <div class="message-btn">
-                       <a href="#" title=""><i class="fa fa-envelope"></i> Share Grievances</a>
+                       <a href="#" class="post-jb active" title=""> Share grievances or challenges</a>
                     </div>
-                    <div class="widget widget-portfolio">
+
+                    <div class="widget widget-jobs">
+                      <div class="sd-title">
+                        <h3>Polls</h3>
+                        <i class="la la-ellipsis-v"></i>
+                      </div>
+
+                      <div class="polls-list">
+                        <div class="pol-question">
+                          <h3>How is our network service in your area?</h3>
+                        </div>
+                        <div class="pol-answers">
+                          <ul>
+                            <li> <input type="radio" name="answer" value=""> <span>Very Good</span> </li>
+                            <li> <input type="radio" name="answer" value=""> <span>Good</span> </li>
+                            <li> <input type="radio" name="answer" value=""> <span>Badt</span> </li>
+                            <li> <input type="radio" name="answer" value=""> <span>Very Bad</span> </li>
+                          </ul>
+                          <p> <a href="#" class="btn btn-primary btn-sm">Submit Answer</a> </p>
+                        </div>
+                        <div class="pol-stats">
+                          <p>Time remaining: 6HRS</p>
+                          <p>Votes: 1k</p>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                    <div style="display:none;" class="widget widget-portfolio">
                        <div class="wd-heady">
                           <h3>Portfolio</h3>
                           <img src="frontend/images/photo-icon.png" alt="">
@@ -462,6 +492,49 @@
                        </div>
                     </div>
                  </div>
+
+                 <div class="right-sidebar">
+
+                    <div class="ads-profileWrap">
+                      <div class="user-profy2">
+                        <div class="widget widget-about">
+                           <img src="frontend/images/wd-logo.png" alt="">
+                           <h3>The Workshop</h3>
+                           <span>Pay only for the Hours worked</span>
+                           <div class="sign_link">
+                              <h3><a href="#" title="">Upcoming Event</a></h3>
+                              <a href="#" title="">Learn More</a>
+                           </div>
+                        </div>
+                      </div>
+
+                      <div class="user-profy2">
+                        <div class="widget widget-about">
+                           <img src="frontend/images/wd-logo.png" alt="">
+                           <h3>Startup Meeting</h3>
+                           <span>Pay only for the Hours worked</span>
+                           <div class="sign_link">
+                              <h3><a href="#" title="">Upcoming Event</a></h3>
+                              <a href="#" title="">Learn More</a>
+                           </div>
+                        </div>
+                      </div>
+
+                      <div class="user-profy2">
+                        <div class="widget widget-about">
+                           <img src="frontend/images/wd-logo.png" alt="">
+                           <h3>Track Time on Workwise</h3>
+                           <span>Pay only for the Hours worked</span>
+                           <div class="sign_link">
+                              <h3><a href="#" title="">Upcoming Event</a></h3>
+                              <a href="#" title="">Learn More</a>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+
+                 </div>
+
               </div>
            </div>
         </div>
@@ -614,6 +687,47 @@
          <button type="submit" class="cancel">Cancel</button>
       </form>
       <a href="#" title="" class="close-box"><i class="la la-close"></i></a>
+   </div>
+</div>
+
+
+
+<div class="post-popup job_post">
+   <div class="post-project">
+      <h3>Share grievances or challenges</h3>
+      <div class="post-project-fields">
+         <form>
+            <div class="row">
+               <div class="col-lg-12">
+                  <input type="text" name="title" placeholder="Subject">
+               </div>
+               <div class="col-lg-12">
+                  <div class="inp-field">
+                     <select>
+                        <option>Select Category</option>
+                        <option>Customer service</option>
+                        <option>Network</option>
+                        <option>Data bundle</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-lg-12">
+                  <textarea name="description" placeholder="Enter grievances or challenges"></textarea>
+               </div>
+               <div class="col-lg-12">
+                 <p>upload media</p>
+                  <input type="file" name="" value="">
+               </div>
+               <div class="col-lg-12">
+                  <ul>
+                     <li><button class="active" type="submit" value="post">Post</button></li>
+                     <li><a href="#" title="">Cancel</a></li>
+                  </ul>
+               </div>
+            </div>
+         </form>
+      </div>
+      <a href="#" title=""><i class="la la-times-circle-o"></i></a>
    </div>
 </div>
 @endsection

@@ -17,6 +17,11 @@ class IndexController extends Controller
        return view('web.services');
     }
 
+    public function consumerLense()
+    {
+       return view('web.consumerLense');
+    }
+
     public function profile()
     {
        return view('web.profile');

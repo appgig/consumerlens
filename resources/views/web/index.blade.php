@@ -14,10 +14,22 @@
 
                      <div  class="suggestions full-width">
                         <div class="sd-title">
-                           <h3>Trending</h3>
+                           <h3>Explore</h3>
                            <i class="la la-ellipsis-v"></i>
                         </div>
-                        <div class="suggestions-list">
+                        <div class="nav-left-lists">
+                          <ul>
+                            <li> <a href="{{route('web.consumerLense')}}">Consumer lens</a> </li>
+                            <li> <a href="{{route('web.index')}}">Home</a> </li>
+                            <li> <a href="{{route('web.services')}}">Regulators</a> </li>
+                            <li> <a href="{{route('web.services')}}">Service Providers</a> </li>
+                            <li> <a href="{{route('web.services')}}">Governmental </a> </li>
+                            <li> <a href="{{route('web.services')}}">MPs</a> </li>
+                            <li> <a href="{{route('web.services')}}">Others</a> </li>
+
+                          </ul>
+                        </div>
+                        <div style="display:none;" class="suggestions-list">
                            <div class="suggestion-usd">
                               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/MTN_Logo.svg/1200px-MTN_Logo.svg.png" alt="">
                               <div class="sgt-text">
@@ -76,13 +88,13 @@
                         <div class="post-st">
                            <ul>
                               <!-- <li><a class="post_project" href="#" title="">Share grievances or challenges </a></li> -->
-                              <li><a class="post-jb active" href="#" title="">Share grievances or challenges</a></li>
+                              <li><a class="post-jb active" href="#" title=""> <i class="la la-share"></i> Share grievances or challenges</a></li>
                            </ul>
                         </div>
                      </div>
                      <div class="posts-section">
 
-                       <div class="post-bar">
+                        <div class="post-bar">
                           <div class="post_topbar">
                              <div class="usy-dt">
                                 <img src="frontend/images/resources/company-pic.png" alt="">
@@ -127,6 +139,7 @@
                                    <span>25</span>
                                 </li>
                                 <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
+                                <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
                              </ul>
                              <a href="#"><i class="fas fa-eye"></i>Views 50</a>
                           </div>
@@ -188,43 +201,32 @@
                                     <span>25</span>
                                  </li>
                                  <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
+                                 <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
                               </ul>
                               <a href="#"><i class="fas fa-eye"></i>Views 50</a>
                            </div>
                         </div>
 
-                        <div class="top-profiles">
-                           <div class="pf-hd">
-                              <h3>Top Profiles</h3>
-                              <i class="la la-ellipsis-v"></i>
-                           </div>
-                           <div class="profiles-slider">
-                              <div class="user-profy">
-                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/MTN_Logo.svg/1200px-MTN_Logo.svg.png" alt="">
-                                 <h3>MTN Ghana</h3>
-                                 <span>Service Provider</span>
-                                 <a href="{{ route('web.profile')}}" title="">View Profile</a>
-                              </div>
-                              <div class="user-profy">
-                                 <img src="https://pbs.twimg.com/profile_images/1216690773770612738/TVeaW-B1_400x400.jpg" alt="">
-                                 <h3>AirtelTigo</h3>
-                                 <span>Service Provider</span>
-                                 <a href="{{ route('web.profile')}}" title="">View Profile</a>
-                              </div>
-                              <div class="user-profy">
-                                 <img src="https://www.dcleakers.com/wp-content/uploads/2019/10/Vodafone-logo.jpg" alt="">
-                                 <h3>Vodafone</h3>
-                                 <span>Service Provider</span>
-                                 <a href="{{ route('web.profile')}}" title="">View Profile</a>
-                              </div>
-                              <div class="user-profy">
-                                 <img src="https://www.mofep.gov.gh/sites/default/files/logo.png" alt="">
-                                 <h3>Ministry of Finanace</h3>
-                                 <span>Regulator</span>
-                                 <a href="{{ route('web.profile')}}" title="">View Profile</a>
-                              </div>
-                           </div>
+                        <!-- advertisment -->
+                        <div class="post-bar">
+                          <div class="epi-sec">
+                             <ul class="descp">
+                                <li><span>Advertisment</span></li>
+                             </ul>
+                          </div>
+                          <div class="job_descp">
+                             <h3>Herbalife</h3>
+                             <div class="job_img">
+                               <a href="#">
+                                 <img src="https://www.herbalvitality.co/images/protein-chips-from-herbalife-625.jpg" alt="">
+                               </a>
+                             </div>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...
+                               <a href="#" title="">visit site</a>
+                             </p>
+                          </div>
                         </div>
+                        <!-- advertisment -->
 
                         <div class="post-bar">
                            <div class="post_topbar">
@@ -281,6 +283,7 @@
                                     <span>25</span>
                                  </li>
                                  <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
+                                 <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
                               </ul>
                               <a href="#"><i class="fas fa-eye"></i>Views 50</a>
                            </div>
@@ -341,6 +344,150 @@
                                     <span>25</span>
                                  </li>
                                  <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
+                                 <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
+                              </ul>
+                              <a href="#"><i class="fas fa-eye"></i>Views 50</a>
+                           </div>
+                        </div>
+
+                        <!-- advertisment -->
+                        <div class="post-bar">
+                          <div class="epi-sec">
+                             <ul class="descp">
+                                <li><span>Advertisment</span></li>
+                             </ul>
+                          </div>
+                          <div class="job_descp">
+                             <h3>DSTV Ghana</h3>
+                             <div class="job_img">
+                               <a href="#">
+                                 <img src="https://lawcarenigeria.com/wp-content/uploads/2020/06/DSTV-the-leading-cable-TV-company-in-Nigeria-.jpg" alt="">
+                               </a>
+                             </div>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...
+                               <a href="#" title="">visit site</a>
+                             </p>
+                          </div>
+                        </div>
+                        <!-- advertisment -->
+
+                        <div class="post-bar">
+                           <div class="post_topbar">
+                              <div class="usy-dt">
+                                 <img src="frontend/images/resources/us-pic.png" alt="">
+                                 <div class="usy-name">
+                                    <h3>John Doe</h3>
+                                    <span><img src="frontend/images/clock.png" alt="">3 min ago</span>
+                                 </div>
+                              </div>
+                              <div class="ed-opts">
+                                 <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                 <ul class="ed-options">
+                                    <li><a href="#" title="">Edit Post</a></li>
+                                    <li><a href="#" title="">Unsaved</a></li>
+                                    <li><a href="#" title="">Unbid</a></li>
+                                    <li><a href="#" title="">Close</a></li>
+                                    <li><a href="#" title="">Hide</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="epi-sec">
+                              <ul class="descp">
+                                 <li><img src="frontend/images/icon8.png" alt=""><span>Accountant</span></li>
+                                 <li><img src="frontend/images/icon9.png" alt=""><span>Accra, Ghana</span></li>
+                              </ul>
+                              <ul class="bk-links">
+                                 <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
+                                 <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                              </ul>
+                           </div>
+                           <div class="job_descp">
+                              <h3>Grievance / Challenge</h3>
+                              <ul class="job-dt">
+                                 <li><span>Directed to </span></li>
+                                 <li><a href="#" title="">MTN Ghana</a></li>
+                              </ul>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="#" title="">view more</a></p>
+                              <ul style="display:none;
+
+                              " class="skill-tags">
+                                 <li><a href="#" title="">HTML</a></li>
+                                 <li><a href="#" title="">PHP</a></li>
+                                 <li><a href="#" title="">CSS</a></li>
+                                 <li><a href="#" title="">Javascript</a></li>
+                                 <li><a href="#" title="">Wordpress</a></li>
+                              </ul>
+                           </div>
+                           <div class="job-status-bar">
+                              <ul class="like-com">
+                                 <li>
+                                    <a href="#"><i class="fas fa-heart"></i> Like</a>
+                                    <img src="frontend/images/liked-img.png" alt="">
+                                    <span>25</span>
+                                 </li>
+                                 <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
+                                 <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
+                              </ul>
+                              <a href="#"><i class="fas fa-eye"></i>Views 50</a>
+                           </div>
+                        </div>
+
+                        <div class="post-bar">
+                           <div class="post_topbar">
+                              <div class="usy-dt">
+                                 <img src="frontend/images/resources/us-pic.png" alt="">
+                                 <div class="usy-name">
+                                    <h3>John Doe</h3>
+                                    <span><img src="frontend/images/clock.png" alt="">3 min ago</span>
+                                 </div>
+                              </div>
+                              <div class="ed-opts">
+                                 <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                 <ul class="ed-options">
+                                    <li><a href="#" title="">Edit Post</a></li>
+                                    <li><a href="#" title="">Unsaved</a></li>
+                                    <li><a href="#" title="">Unbid</a></li>
+                                    <li><a href="#" title="">Close</a></li>
+                                    <li><a href="#" title="">Hide</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="epi-sec">
+                              <ul class="descp">
+                                 <li><img src="frontend/images/icon8.png" alt=""><span>Accountant</span></li>
+                                 <li><img src="frontend/images/icon9.png" alt=""><span>Accra, Ghana</span></li>
+                              </ul>
+                              <ul class="bk-links">
+                                 <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
+                                 <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                              </ul>
+                           </div>
+                           <div class="job_descp">
+                              <h3>Grievance / Challenge</h3>
+                              <ul class="job-dt">
+                                 <li><span>Directed to </span></li>
+                                 <li><a href="#" title="">MTN Ghana</a></li>
+                              </ul>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="#" title="">view more</a></p>
+                              <ul style="display:none;
+
+                              " class="skill-tags">
+                                 <li><a href="#" title="">HTML</a></li>
+                                 <li><a href="#" title="">PHP</a></li>
+                                 <li><a href="#" title="">CSS</a></li>
+                                 <li><a href="#" title="">Javascript</a></li>
+                                 <li><a href="#" title="">Wordpress</a></li>
+                              </ul>
+                           </div>
+                           <div class="job-status-bar">
+                              <ul class="like-com">
+                                 <li>
+                                    <a href="#"><i class="fas fa-heart"></i> Like</a>
+                                    <img src="frontend/images/liked-img.png" alt="">
+                                    <span>25</span>
+                                 </li>
+                                 <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
+                                 <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
                               </ul>
                               <a href="#"><i class="fas fa-eye"></i>Views 50</a>
                            </div>
@@ -479,17 +626,143 @@
                </div>
 
                <div class="col-lg-3 pd-right-none no-pd">
+
                   <div class="right-sidebar">
-                     <div class="widget widget-about">
-                        <img src="frontend/images/wd-logo.png" alt="">
-                        <h3>Track Time on Workwise</h3>
-                        <span>Pay only for the Hours worked</span>
-                        <div class="sign_link">
-                           <h3><a href="#" title="">advertisement</a></h3>
-                           <a href="#" title="">Learn More</a>
-                        </div>
+
+                     <div class="ads-profileWrap">
+                       <div class="user-profy2">
+                         <div class="widget widget-about">
+                            <img src="frontend/images/wd-logo.png" alt="">
+                            <h3>The Workshop</h3>
+                            <span>Pay only for the Hours worked</span>
+                            <div class="sign_link">
+                               <h3><a href="#" title="">Upcoming Event</a></h3>
+                               <a href="#" title="">Learn More</a>
+                            </div>
+                         </div>
+                       </div>
+
+                       <div class="user-profy2">
+                         <div class="widget widget-about">
+                            <img src="frontend/images/wd-logo.png" alt="">
+                            <h3>Startup Meeting</h3>
+                            <span>Pay only for the Hours worked</span>
+                            <div class="sign_link">
+                               <h3><a href="#" title="">Upcoming Event</a></h3>
+                               <a href="#" title="">Learn More</a>
+                            </div>
+                         </div>
+                       </div>
+
+                       <div class="user-profy2">
+                         <div class="widget widget-about">
+                            <img src="frontend/images/wd-logo.png" alt="">
+                            <h3>Track Time on Workwise</h3>
+                            <span>Pay only for the Hours worked</span>
+                            <div class="sign_link">
+                               <h3><a href="#" title="">Upcoming Event</a></h3>
+                               <a href="#" title="">Learn More</a>
+                            </div>
+                         </div>
+                       </div>
                      </div>
+
                   </div>
+
+                  <div class="widget widget-jobs">
+                    <div class="sd-title">
+                      <h3>Polls</h3>
+                      <i class="la la-ellipsis-v"></i>
+                    </div>
+
+                    <div class="polls-list">
+                      <div class="pol-question">
+                        <h3>Which city is the cleanest in Ghana?</h3>
+                      </div>
+                      <div class="pol-answers">
+                        <ul>
+                          <li> <input type="radio" name="answer" value=""> <span>Accra</span> </li>
+                          <li> <input type="radio" name="answer" value=""> <span>Kumasi</span> </li>
+                          <li> <input type="radio" name="answer" value=""> <span>Cape Coast</span> </li>
+                          <li> <input type="radio" name="answer" value=""> <span>Ho</span> </li>
+                        </ul>
+                        <p> <a href="#" class="btn btn-primary btn-sm">Submit Answer</a> </p>
+                      </div>
+                      <div class="pol-stats">
+                        <p>Time remaining: 23HRS</p>
+                        <p>Votes: 12k</p>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                  <div class="widget widget-jobs">
+                    <div class="sd-title">
+                      <h3>Trending News</h3>
+                      <i class="la la-ellipsis-v"></i>
+                    </div>
+                    <div id="homeJobList" class="jobs-list">
+                      <div class="job-info">
+                        <div class="job-details">
+                          <a href="#">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut labore</p>
+                          </a>
+                        </div>
+                        <div class="hr-rate">
+                          <span>$25/hr</span>
+                        </div>
+                      </div>
+                      <div class="job-info">
+                        <div class="job-details">
+                          <a href="#">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt</p>
+                          </a>
+                        </div>
+                        <div class="hr-rate">
+                          <span>$25/hr</span>
+                        </div>
+                      </div>
+                      <div class="job-info">
+                        <div class="job-details">
+                          <a href="#">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt</p>
+                          </a>
+                        </div>
+                        <div class="hr-rate">
+                          <span>$25/hr</span>
+                        </div>
+                      </div>
+                      <div class="job-info">
+                        <div class="job-details">
+                          <a href="#">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt</p>
+                          </a>
+                        </div>
+                        <div class="hr-rate">
+                          <span>$25/hr</span>
+                        </div>
+                      </div>
+                      <div class="job-info">
+                        <div class="job-details">
+                          <a href="#">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt</p>
+                          </a>
+                        </div>
+                        <div class="hr-rate">
+                          <span>$25/hr</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
                </div>
             </div>
          </div>
@@ -550,7 +823,7 @@
 
 <div class="post-popup job_post">
    <div class="post-project">
-      <h3>Share your grievances</h3>
+      <h3>Share grievances or challenges</h3>
       <div class="post-project-fields">
          <form>
             <div class="row">

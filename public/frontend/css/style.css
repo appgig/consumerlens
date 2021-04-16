@@ -306,7 +306,10 @@ header {
     float: left;
     width: 150px;
     margin-right: 14px;
-    margin-top: 10px;
+    margin-top: 0px;
+}
+.logo img{
+  max-width: 157%;
 }
 .logo.pd-btm {
     padding-bottom: 10px;
@@ -381,6 +384,7 @@ header {
     float: left;
     width: 280px;
     margin-top: 9px;
+    margin-left: 7%;
 }
 .search-bar form {
     float: left;
@@ -1173,6 +1177,7 @@ main {
 }
 .bk-links {
     float: right;
+    display: none;
 }
 .bk-links li {
     display: inline-block;
@@ -1405,6 +1410,10 @@ main {
     -o-box-shadow: 0 0.5px 0.2px rgba(0, 0, 0, 0.24);
     box-shadow: 0 0.5px 0.2px rgba(0, 0, 0, 0.24);
     padding: 20px 0 0;
+}
+.user-profy2 {
+  float: left;
+  width: 100%;
 }
 .user-profy > img {
     float: none;
@@ -1745,6 +1754,28 @@ main {
 .sign_link > a:hover {
     color: #36d1dc;
 }
+.polls-list {
+  padding: 20px;
+}
+.pol-question {
+  padding-top: 50px;
+}
+.pol-question h3 {
+  font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 21px;
+}
+.pol-answers {
+  padding-bottom: 10px;
+}
+.pol-answers ul li {
+  margin-bottom: 10px;
+}
+.pol-answers ul li span {
+  font-size: 15px;
+  vertical-align: 1px;
+}
 .jobs-list {
     float: left;
     width: 100%;
@@ -1760,7 +1791,7 @@ main {
 }
 .job-details {
     float: left;
-    width: 165px;
+    /* width: 165px; */
 }
 .job-details h3 {
     color: #000;
@@ -1773,9 +1804,13 @@ main {
     font-size: 14px;
     line-height: 20px;
 }
+.job-details p:hover {
+  color: #36d1dc;
+}
 .hr-rate {
-    float: right;
-    width: 40px;
+    /* float: right;
+    width: 40px; */
+    display: none;
 }
 .hr-rate span {
     color: #000;
@@ -6568,6 +6603,30 @@ ul#myTab {
     color: #666;
 }
 
+.nav-left-lists {
+  padding-top: 60px;
+}
+
+.mainHomeNav {
+  display: none;
+}
+/* .nav-left-lists ul {
+  margin: 0;
+  padding: 0;
+} */
+
+.nav-left-lists ul li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+  color: #000;
+}
+
+.nav-left-lists ul li a:hover {
+  color: #36d1dc;
+}
+
 @media screen and (max-width: 650px) {
   .user-pro-img img {
     max-height: 100px;
@@ -6579,5 +6638,15 @@ ul#myTab {
 
   #homeTrending {
     display: none;
+  }
+
+  .mainHomeNav {
+    display: block;
+  }
+  .logo img {
+    max-width: 100%;
+  }
+  .search-bar {
+    margin-left: 0;
   }
 }

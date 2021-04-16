@@ -18,6 +18,7 @@
 Route::get('/', 'Web\IndexController@index')->name('web.index');
 
 Route::get('/services', 'Web\IndexController@services')->name('web.services');
+Route::get('/consumer-lense', 'Web\IndexController@consumerLense')->name('web.consumerLense');
 
 Route::get('/profile', 'Web\IndexController@profile')->name('web.profile');
 

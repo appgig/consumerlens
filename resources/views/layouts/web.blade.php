@@ -34,12 +34,19 @@
                         <button type="submit"><i class="la la-search"></i></button>
                      </form>
                   </div>
-                  <nav>
+                  <nav class="mainHomeNav">
                      <ul>
                         <li>
                            <a href="{{route('web.index')}}" title="">
                            <span> <i class="la la-home"></i> </span>
                            Home
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="{{route('web.consumerLense')}}" title="">
+                           <span> <i class="la la-home"></i> </span>
+                           Consumer lens
                            </a>
                         </li>
 
@@ -66,9 +73,17 @@
                         </li>
 
                         <li>
-                           <a href="#" title="">
+                           <a href="{{route('web.services')}}" title="">
                            <span> <i class="la la-calendar"></i> </span>
-                           Upcoming events
+                           MPs
+                           </a>
+                        </li>
+
+
+                        <li>
+                           <a href="{{route('web.services')}}" title="">
+                           <span> <i class="la la-calendar"></i> </span>
+                           Others
                            </a>
                         </li>
 

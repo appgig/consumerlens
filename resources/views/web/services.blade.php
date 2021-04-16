@@ -7,7 +7,12 @@
 <section class="companies-info">
   <div class="container">
      <div class="company-title">
+        <p style="margin-bottom:20px;">
+         <a class="btn btn-primary post-jb active" href="#" title=""> <i class="la la-share"></i> Share grievances or challenges</a>
+        </p>
+
         <h3>All Service Providers</h3>
+
      </div>
      <div class="companies-list">
         <div class="row">
@@ -232,6 +237,57 @@
      </div>
   </div>
 </section>
+
+<div class="post-popup job_post">
+   <div class="post-project">
+      <h3>Share grievances or challenges</h3>
+      <div class="post-project-fields">
+         <form>
+            <div class="row">
+               <div class="col-lg-12">
+                  <input type="text" name="title" placeholder="Title">
+               </div>
+               <div class="col-lg-12">
+                  <div class="inp-field">
+                     <select>
+                        <option>Select Category</option>
+                        <option>Service Provider</option>
+                        <option>Regulator</option>
+                        <option>Governmental institutions</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-lg-12">
+                  <div class="inp-field">
+                     <select>
+                        <option>Select Service Provider</option>
+                        <option>MTN</option>
+                        <option>AirtelTigo</option>
+                        <option>Ministry of Finanace</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="col-lg-12">
+                  <input type="text" name="skills" placeholder="Subject">
+               </div>
+               <div class="col-lg-12">
+                  <textarea name="description" placeholder="Description"></textarea>
+               </div>
+               <div class="col-lg-12">
+                  <input type="file" name="" value="">
+               </div>
+               <div class="col-lg-12">
+                  <ul>
+                     <li><button class="active" type="submit" value="post">Post</button></li>
+                     <li><a href="#" title="">Cancel</a></li>
+                  </ul>
+               </div>
+            </div>
+         </form>
+      </div>
+      <a href="#" title=""><i class="la la-times-circle-o"></i></a>
+   </div>
+</div>
 @endsection
 
 
