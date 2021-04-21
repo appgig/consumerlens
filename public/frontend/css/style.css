@@ -741,9 +741,9 @@ main {
     width: 100%;
     background-color: #fff;
     margin-bottom: 20px;
-    border-left: 1px solid #e5e5e5;
+    /* border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5; */
 }
 .username-dt {
     float: left;
@@ -825,24 +825,26 @@ main {
 .sd-title {
     float: left;
     width: 100%;
-    padding: 20px;
-    border-bottom: 1px solid #e5e5e5;
+    padding: 10px;
+    /* border-bottom: 1px solid #e5e5e5; */
+    background: #36d1dc;
     position: relative;
     display: grid;
+    border-radius: 5px;
 }
 .sd-title h3 {
-    color: #000;
-    font-size: 18px;
+    color: #555;
+    font-size: 16px;
     font-weight: 600;
     float: left;
 }
 .sd-title i {
     float: right;
-    color: #b7b7b7;
+    color: #555;
     font-size: 24px;
     position: absolute;
     right: 5px;
-    top: 18px;
+    top: 6px;
 }
 .suggestions-list {
     float: left;
@@ -851,7 +853,9 @@ main {
 }
 .suggestion-usd {
     float: left;
-    width: 100%;
+    background: #eee;
+    margin: 2px 5px;
+    width: 96%;
     padding: 15px 20px;
 }
 .suggestion-usd img {
@@ -913,6 +917,25 @@ main {
 .view-more > a:hover {
     color: #36d1dc;
 }
+
+.sugStarMain img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.sgt2Text p {
+  font-size: 13px;
+    line-height: 18px;
+}
+
+.sugStar span {
+  color: #36d1dc;
+}
+
+.sgt2Text b {
+  color: #36d1dc;
+}
+
 .tags-sec {
     background-color: #fff;
     padding: 25px 5px;
@@ -1160,6 +1183,7 @@ main {
 }
 .descp {
     float: left;
+    display: none;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -1225,6 +1249,7 @@ main {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 .job-dt {
     float: left;
@@ -1322,7 +1347,7 @@ main {
 .like-com li span {
     color: #fff;
     font-size: 13px;
-    width: 30px;
+    width: auto;
     height: 30px;
     background-color: #36d1dc;
     line-height: 30px;
@@ -1694,6 +1719,7 @@ main {
 .right-sidebar {
     float: left;
     width: 100%;
+    margin-bottom: 20px;
 }
 .widget {
     float: left;
@@ -1758,10 +1784,10 @@ main {
   padding: 20px;
 }
 .pol-question {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .pol-question h3 {
-  font-size: 16px;
+  font-size: 15px;
     margin-bottom: 10px;
     font-weight: 600;
     line-height: 21px;
@@ -6604,27 +6630,140 @@ ul#myTab {
 }
 
 .nav-left-lists {
-  padding-top: 60px;
+  padding-top: 15px;
 }
 
 .mainHomeNav {
   display: none;
 }
-/* .nav-left-lists ul {
-  margin: 0;
-  padding: 0;
-} */
+
+.nav-left-lists ul {
+  margin: 20px 10px 10px 10px;
+  box-shadow: rgb(0 0 0 / 30%) 0px 1px 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 .nav-left-lists ul li a {
   display: block;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 15px;
   border-bottom: 1px solid #eee;
   color: #000;
 }
 
+.nav-left-lists ul li a img {
+  margin-right: 5px;
+}
+
 .nav-left-lists ul li a:hover {
   color: #36d1dc;
+}
+
+.consLenseSeeall {
+  text-align: right;
+  color: #F6AB15 !important;
+  font-size: 11px !important;
+  font-weight: 600;
+}
+
+.consLenseSee {
+  margin-right: 10px;
+}
+
+.klenstPos {
+  position: relative;
+}
+
+.consLenseSeeRight {
+  position: absolute;
+  right: 20px;
+}
+
+.drpMenuAct {
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  background: #fff;
+  right: -30px;
+  top: 65px;
+  box-shadow: rgb(0 0 0 / 30%) 0px 1px 10px;
+  border-radius: 6px;
+}
+
+.drpMenuAct  a {
+  padding: 7px 15px !important;
+  font-size: 14px !important;
+  border: none !important;
+}
+
+
+/* new styles */
+#homeTrending {
+  /* background: #fff; */
+  /* padding: 15px; */
+}
+
+#mainLeftSideBar {
+  padding: 10px;
+  background: #fff;
+}
+
+.ourevent-wrapper {
+  background: #36d1dc;
+  padding: 20px;
+  color: #fff;
+}
+
+.ourevent-header {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.ourevent-header h1 {
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.ourevent-header h3 {
+  margin-left: 10px;
+}
+
+.ourevent-body {
+  margin-bottom: 10px;
+}
+
+.ourevent-body p {
+  color: #fff;
+}
+
+.ourevent-footer {
+  /* margin-bottom: 20px; */
+}
+
+.ourevent-footer ul li {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.polls-progress .progress {
+  margin-bottom: 10px;
+  height: 20px;
+  background-color: #ffd8a8;
+}
+
+.polls-progress .progress .progress-bar {
+  padding: 10px;
+  background-color: #f76707;
+}
+
+#voteBtn {
+  border-radius: 10px;
+}
+
+.sgt2Text {
+  width: 80%;
 }
 
 @media screen and (max-width: 650px) {

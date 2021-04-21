@@ -10,69 +10,140 @@
          <div class="main-section-data">
             <div class="row">
                <div id="homeTrending" class="col-lg-3 col-md-4 pd-left-none no-pd">
-                  <div class="main-left-sidebar no-margin">
+                  <div id="mainLeftSideBar" class="main-left-sidebar no-margin">
 
                      <div  class="suggestions full-width">
                         <div class="sd-title">
-                           <h3>Explore</h3>
-                           <i class="la la-ellipsis-v"></i>
+                           <h3>Consumerlens</h3>
+                           <i class="fa fa-caret-down"></i>
                         </div>
                         <div class="nav-left-lists">
                           <ul>
-                            <li> <a href="{{route('web.consumerLense')}}">Consumer lens</a> </li>
-                            <li> <a href="{{route('web.index')}}">Home</a> </li>
-                            <li> <a href="{{route('web.services')}}">Regulators</a> </li>
-                            <li> <a href="{{route('web.services')}}">Service Providers</a> </li>
-                            <li> <a href="{{route('web.services')}}">Governmental </a> </li>
-                            <li> <a href="{{route('web.services')}}">MPs</a> </li>
-                            <li> <a href="{{route('web.services')}}">Others</a> </li>
+                            <li>
+                               <a href="#" class="klenstPos">
+                                  <span class="consLenseSee"> <i class="fa fa-microphone"></i> </span>
+                                   Radio
+                                  <span class="consLenseSeeRight"> <i class="fa fa-caret-down"></i> </span>
 
+                                  <div class="drpMenuAct">
+                                    <a class="drpMenuActItem" href="#">Adom FM</a>
+                                    <a class="drpMenuActItem" href="#">Peace FM</a>
+                                    <a class="drpMenuActItem" href="#">Citi FM</a>
+                                  </div>
+
+                               </a>
+                             </li>
+                            <li> <a href="{{route('web.index')}}"> <span class="consLenseSee"><i class="fa fa-television"></i> </span> TV</a> </li>
+                            <li> <a href="{{route('web.services')}}"> <span class="consLenseSee"><i class="fa fa-newspaper-o"></i> </span> Digital Newspaper</a> </li>
+                            <li> <a href="{{route('web.services')}}"> <span class="consLenseSee"><i class="fa fa-address-card-o"></i> </span> News</a> </li>
+                            <li> <a href="{{route('web.services')}}"> <span class="consLenseSee"><i class="fa fa-commenting-o"></i> </span> Company Reviews </a> </li>
+                            <li> <a href="{{route('web.services')}}" class="consLenseSeeall"> SEE ALL</a> </li>
                           </ul>
                         </div>
-                        <div style="display:none;" class="suggestions-list">
-                           <div class="suggestion-usd">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/MTN_Logo.svg/1200px-MTN_Logo.svg.png" alt="">
-                              <div class="sgt-text">
-                                 <h4>MTN Ghana</h4>
-                                 <span>Service Provider</span>
-                              </div>
-                              <!-- <span><i class="la la-plus"></i></span> -->
-                           </div>
-                           <div class="suggestion-usd">
-                              <img src="https://www.dcleakers.com/wp-content/uploads/2019/10/Vodafone-logo.jpg" alt="">
-                              <div class="sgt-text">
-                                 <h4>Vodafone</h4>
-                                 <span>Service provider</span>
-                              </div>
-                              <!-- <span><i class="la la-plus"></i></span> -->
-                           </div>
-                           <div class="suggestion-usd">
-                              <img src="https://www.mofep.gov.gh/sites/default/files/logo.png" alt="">
-                              <div class="sgt-text">
-                                 <h4>Ministry of Finanace</h4>
-                                 <span>Government institutions</span>
-                              </div>
-                              <!-- <span><i class="la la-plus"></i></span> -->
-                           </div>
-                           <div class="suggestion-usd">
-                              <img src="https://www.gsa.gov.gh/wp-content/uploads/2018/04/cropped-GSA-Logo.png" alt="">
-                              <div class="sgt-text">
-                                 <h4>Ghana Standards Authority</h4>
-                                 <span>Regulator</span>
-                              </div>
-                              <!-- <span><i class="la la-plus"></i></span> -->
-                           </div>
-                           <div class="suggestion-usd">
-                              <img src="https://pbs.twimg.com/profile_images/1216690773770612738/TVeaW-B1_400x400.jpg" alt="">
-                              <div class="sgt-text">
-                                 <h4>AirtelTigo</h4>
-                                 <span>Service Provider</span>
-                              </div>
-                              <!-- <span><i class="la la-plus"></i></span> -->
-                           </div>
-                           <div class="view-more">
-                              <a href="#" title="">View More</a>
-                           </div>
+                     </div>
+
+                     <div  class="suggestions full-width">
+                        <div class="sd-title">
+                           <h3>Service Providers</h3>
+                           <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="nav-left-lists">
+                          <ul>
+                            <li>
+                               <a href="#" class="klenstPos">
+                                  <span class="consLenseSee"> <i class="fa fa-wifi"></i> </span>
+                                   Telcos
+                                  <span class="consLenseSeeRight"> <i class="fa fa-caret-down"></i> </span>
+
+                                  <div class="drpMenuAct">
+                                    <a class="drpMenuActItem" href="#">MTN Ghana</a>
+                                    <a class="drpMenuActItem" href="#">Vodafone</a>
+                                    <a class="drpMenuActItem" href="#">AirtelTigo</a>
+                                  </div>
+
+                               </a>
+                             </li>
+                            <li> <a href="{{route('web.index')}}"> <span class="consLenseSee"><i class="fa fa-bank"></i> </span> Banks</a> </li>
+                            <li> <a href="{{route('web.services')}}"> <span class="consLenseSee"><i class="fa fa-newspaper-o"></i> </span> Automobile</a> </li>
+                            <li> <a href="{{route('web.services')}}" class="consLenseSeeall"> SEE ALL</a> </li>
+                          </ul>
+                        </div>
+                     </div>
+
+                     <div  class="suggestions full-width">
+                        <div class="sd-title">
+                           <h3>Regulators</h3>
+                           <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="nav-left-lists">
+                          <ul>
+                            <li> <a href="#">  Registrar General’s Department (RGD)</a> </li>
+                            <li> <a href="#">  Ghana Revenue Authority (GRA)</a> </li>
+                            <li> <a href="#">  Ghana Investment Promotion Centre (GIPC)</a> </li>
+                            <li> <a href="#">  Ghana Immigration Services (GIS)</a> </li>
+                            <li> <a href="#">  Ghana Civil Aviation Authority (GCAA))</a> </li>
+                            <li> <a href="{{route('web.services')}}" class="consLenseSeeall"> SEE ALL</a> </li>
+                          </ul>
+                        </div>
+                     </div>
+
+                     <div  class="suggestions full-width">
+                        <div class="sd-title">
+                           <h3>Governmental Institutions</h3>
+                           <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="nav-left-lists">
+                          <ul>
+                            <li> <a href="#">  Ministry of Works & Housing</a> </li>
+                            <li> <a href="#">  Ministry of Fisheries & Aquaculture</a> </li>
+                            <li> <a href="#">  Ministry of Defence</a> </li>
+                            <li> <a href="{{route('web.services')}}" class="consLenseSeeall"> SEE ALL</a> </li>
+                          </ul>
+                        </div>
+                     </div>
+
+                     <div  class="suggestions full-width">
+                        <div class="sd-title">
+                           <h3>Embassies</h3>
+                           <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="nav-left-lists">
+                          <ul>
+                            <li> <a href="#">  Spanish Embassy</a> </li>
+                            <li> <a href="#">  Italian Embassy</a> </li>
+                            <li> <a href="#">  Embassy of the Korea</a> </li>
+                            <li> <a href="{{route('web.services')}}" class="consLenseSeeall"> SEE ALL</a> </li>
+                          </ul>
+                        </div>
+                     </div>
+
+                     <div  class="suggestions full-width">
+                        <div class="sd-title">
+                           <h3>Member of Parliament</h3>
+                           <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="nav-left-lists">
+                          <ul>
+                            <li> <a href="#"> <img src="frontend/images/photo-icon.png" alt=""> Francis Asenso-Boakye</a> </li>
+                            <li> <a href="#"> <img src="frontend/images/photo-icon.png" alt=""> Kojo Oppong Nkrumah</a> </li>
+                            <li> <a href="#"> <img src="frontend/images/photo-icon.png" alt=""> Mustapha Abdul-Hamid</a> </li>
+                            <li> <a href="{{route('web.services')}}" class="consLenseSeeall"> SEE ALL</a> </li>
+                          </ul>
+                        </div>
+                     </div>
+
+                     <div  class="suggestions full-width">
+                        <div class="sd-title">
+                           <h3>Commissions</h3>
+                           <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="nav-left-lists">
+                          <ul>
+                            <li> <a href="#"> Forestry Commission</a> </li>
+                            <li> <a href="#"> Energy Commission</a> </li>
+                            <li> <a href="#"> National Insurance Commission</a> </li>
+                            <li> <a href="{{route('web.services')}}" class="consLenseSeeall"> SEE ALL</a> </li>
+                          </ul>
                         </div>
                      </div>
 
@@ -81,7 +152,7 @@
 
                <div class="col-lg-6 col-md-8 no-pd">
                   <div class="main-ws-sec">
-                     <div class="post-topbar">
+                     <div style="display:none;" class="post-topbar">
                         <div class="user-picy">
                            <img src="frontend/images/resources/user-pic.png" alt="">
                         </div>
@@ -134,18 +205,69 @@
                           <div class="job-status-bar">
                              <ul class="like-com">
                                 <li>
-                                   <a href="#" class="active"><i class="fas fa-heart"></i> Like</a>
-                                   <img src="frontend/images/liked-img.png" alt="">
-                                   <span>25</span>
+                                   <a href="#" class=""><i class="fas fa-heart"></i> Like</a>
+                                   <!-- <img src="frontend/images/liked-img.png" alt=""> -->
+                                   <span></span>
                                 </li>
                                 <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
                                 <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
                              </ul>
                              <a href="#"><i class="fas fa-eye"></i>Views 50</a>
                           </div>
-                       </div>
+                        </div>
 
                         <div class="post-bar">
+                          <div class="post_topbar">
+                             <div class="usy-dt">
+                                <img src="frontend/images/resources/company-pic.png" alt="">
+                                <div class="usy-name">
+                                   <h3>SSNIT</h3>
+                                   <span><img src="frontend/images/clock.png" alt="">3 min ago</span>
+                                </div>
+                             </div>
+                             <div class="ed-opts">
+                                <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                <ul class="ed-options">
+                                   <li><a href="#" title="">Edit Post</a></li>
+                                   <li><a href="#" title="">Unsaved</a></li>
+                                   <li><a href="#" title="">Unbid</a></li>
+                                   <li><a href="#" title="">Close</a></li>
+                                   <li><a href="#" title="">Hide</a></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="epi-sec">
+                             <ul class="descp">
+                                <li><img src="frontend/images/icon8.png" alt=""><span>Telecom</span></li>
+                                <li><img src="frontend/images/icon9.png" alt=""><span>Ghana</span></li>
+                             </ul>
+                             <ul class="bk-links">
+                                <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
+                                <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                             </ul>
+                          </div>
+                          <div class="job_descp">
+                             <h3>SSNIT pays</h3>
+                             <div class="job_img">
+                               <img src="https://mtn.com.gh/wp-content/uploads/2020/06/GettyImages-865615130_.jpg" alt="">
+                             </div>
+                             <p>The Social Security and National Insurance Trust (SSNIT) has over time admonished the working class to ensure they make their pension trust <br> <a href="#" title="">view more</a></p>
+                          </div>
+                          <div class="job-status-bar">
+                             <ul class="like-com">
+                                <li>
+                                   <a href="#" class=""><i class="fas fa-heart"></i> Like</a>
+                                   <!-- <img src="frontend/images/liked-img.png" alt=""> -->
+                                   <span></span>
+                                </li>
+                                <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
+                                <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
+                             </ul>
+                             <a href="#"><i class="fas fa-eye"></i>Views 50</a>
+                          </div>
+                        </div>
+
+                        <div style="display:none;" class="post-bar">
                            <div class="post_topbar">
                               <div class="usy-dt">
                                  <img src="frontend/images/resources/us-pic.png" alt="">
@@ -197,8 +319,8 @@
                               <ul class="like-com">
                                  <li>
                                     <a href="#"><i class="fas fa-heart"></i> Like</a>
-                                    <img src="frontend/images/liked-img.png" alt="">
-                                    <span>25</span>
+                                    <!-- <img src="frontend/images/liked-img.png" alt=""> -->
+                                    <span></span>
                                  </li>
                                  <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
                                  <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
@@ -222,132 +344,112 @@
                                </a>
                              </div>
                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...
-                               <a href="#" title="">visit site</a>
+                              <br> <a href="#" title="">visit site</a>
                              </p>
                           </div>
                         </div>
                         <!-- advertisment -->
 
                         <div class="post-bar">
-                           <div class="post_topbar">
-                              <div class="usy-dt">
-                                 <img src="frontend/images/resources/us-pic.png" alt="">
-                                 <div class="usy-name">
-                                    <h3>John Doe</h3>
-                                    <span><img src="frontend/images/clock.png" alt="">3 min ago</span>
-                                 </div>
-                              </div>
-                              <div class="ed-opts">
-                                 <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
-                                 <ul class="ed-options">
-                                    <li><a href="#" title="">Edit Post</a></li>
-                                    <li><a href="#" title="">Unsaved</a></li>
-                                    <li><a href="#" title="">Unbid</a></li>
-                                    <li><a href="#" title="">Close</a></li>
-                                    <li><a href="#" title="">Hide</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="epi-sec">
-                              <ul class="descp">
-                                 <li><img src="frontend/images/icon8.png" alt=""><span>Accountant</span></li>
-                                 <li><img src="frontend/images/icon9.png" alt=""><span>Accra, Ghana</span></li>
-                              </ul>
-                              <ul class="bk-links">
-                                 <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
-                                 <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
-                              </ul>
-                           </div>
-                           <div class="job_descp">
-                              <h3>Grievance / Challenge</h3>
-                              <ul class="job-dt">
-                                 <li><span>Directed to </span></li>
-                                 <li><a href="#" title="">MTN Ghana</a></li>
-                              </ul>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="#" title="">view more</a></p>
-                              <ul style="display:none;
-
-                              " class="skill-tags">
-                                 <li><a href="#" title="">HTML</a></li>
-                                 <li><a href="#" title="">PHP</a></li>
-                                 <li><a href="#" title="">CSS</a></li>
-                                 <li><a href="#" title="">Javascript</a></li>
-                                 <li><a href="#" title="">Wordpress</a></li>
-                              </ul>
-                           </div>
-                           <div class="job-status-bar">
-                              <ul class="like-com">
-                                 <li>
-                                    <a href="#"><i class="fas fa-heart"></i> Like</a>
-                                    <img src="frontend/images/liked-img.png" alt="">
-                                    <span>25</span>
-                                 </li>
-                                 <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
-                                 <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
-                              </ul>
-                              <a href="#"><i class="fas fa-eye"></i>Views 50</a>
-                           </div>
+                          <div class="post_topbar">
+                             <div class="usy-dt">
+                                <img src="frontend/images/resources/company-pic.png" alt="">
+                                <div class="usy-name">
+                                   <h3>Nadmo</h3>
+                                   <span><img src="frontend/images/clock.png" alt="">3 min ago</span>
+                                </div>
+                             </div>
+                             <div class="ed-opts">
+                                <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                <ul class="ed-options">
+                                   <li><a href="#" title="">Edit Post</a></li>
+                                   <li><a href="#" title="">Unsaved</a></li>
+                                   <li><a href="#" title="">Unbid</a></li>
+                                   <li><a href="#" title="">Close</a></li>
+                                   <li><a href="#" title="">Hide</a></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="epi-sec">
+                             <ul class="descp">
+                                <li><img src="frontend/images/icon8.png" alt=""><span>Telecom</span></li>
+                                <li><img src="frontend/images/icon9.png" alt=""><span>Ghana</span></li>
+                             </ul>
+                             <ul class="bk-links">
+                                <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
+                                <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                             </ul>
+                          </div>
+                          <div class="job_descp">
+                             <h3>Nadmo training</h3>
+                             <div class="job_img">
+                               <img src="https://mtn.com.gh/wp-content/uploads/2020/06/GettyImages-865615130_.jpg" alt="">
+                             </div>
+                             <p>NADMO trains specialists on post-disaster needs assessment. The training sought to train a pool of recovery specialists on the PDNA and ... <br> <a href="#" title="">view more</a></p>
+                          </div>
+                          <div class="job-status-bar">
+                             <ul class="like-com">
+                                <li>
+                                   <a href="#" class=""><i class="fas fa-heart"></i> Like</a>
+                                   <!-- <img src="frontend/images/liked-img.png" alt=""> -->
+                                   <span></span>
+                                </li>
+                                <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
+                                <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
+                             </ul>
+                             <a href="#"><i class="fas fa-eye"></i>Views 50</a>
+                          </div>
                         </div>
 
                         <div class="post-bar">
-                           <div class="post_topbar">
-                              <div class="usy-dt">
-                                 <img src="frontend/images/resources/us-pic.png" alt="">
-                                 <div class="usy-name">
-                                    <h3>John Doe</h3>
-                                    <span><img src="frontend/images/clock.png" alt="">3 min ago</span>
-                                 </div>
-                              </div>
-                              <div class="ed-opts">
-                                 <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
-                                 <ul class="ed-options">
-                                    <li><a href="#" title="">Edit Post</a></li>
-                                    <li><a href="#" title="">Unsaved</a></li>
-                                    <li><a href="#" title="">Unbid</a></li>
-                                    <li><a href="#" title="">Close</a></li>
-                                    <li><a href="#" title="">Hide</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="epi-sec">
-                              <ul class="descp">
-                                 <li><img src="frontend/images/icon8.png" alt=""><span>Accountant</span></li>
-                                 <li><img src="frontend/images/icon9.png" alt=""><span>Accra, Ghana</span></li>
-                              </ul>
-                              <ul class="bk-links">
-                                 <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
-                                 <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
-                              </ul>
-                           </div>
-                           <div class="job_descp">
-                              <h3>Grievance / Challenge</h3>
-                              <ul class="job-dt">
-                                 <li><span>Directed to </span></li>
-                                 <li><a href="#" title="">MTN Ghana</a></li>
-                              </ul>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="#" title="">view more</a></p>
-                              <ul style="display:none;
-
-                              " class="skill-tags">
-                                 <li><a href="#" title="">HTML</a></li>
-                                 <li><a href="#" title="">PHP</a></li>
-                                 <li><a href="#" title="">CSS</a></li>
-                                 <li><a href="#" title="">Javascript</a></li>
-                                 <li><a href="#" title="">Wordpress</a></li>
-                              </ul>
-                           </div>
-                           <div class="job-status-bar">
-                              <ul class="like-com">
-                                 <li>
-                                    <a href="#"><i class="fas fa-heart"></i> Like</a>
-                                    <img src="frontend/images/liked-img.png" alt="">
-                                    <span>25</span>
-                                 </li>
-                                 <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
-                                 <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
-                              </ul>
-                              <a href="#"><i class="fas fa-eye"></i>Views 50</a>
-                           </div>
+                          <div class="post_topbar">
+                             <div class="usy-dt">
+                                <img src="frontend/images/resources/company-pic.png" alt="">
+                                <div class="usy-name">
+                                   <h3>MTN Ghana</h3>
+                                   <span><img src="frontend/images/clock.png" alt="">3 min ago</span>
+                                </div>
+                             </div>
+                             <div class="ed-opts">
+                                <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                <ul class="ed-options">
+                                   <li><a href="#" title="">Edit Post</a></li>
+                                   <li><a href="#" title="">Unsaved</a></li>
+                                   <li><a href="#" title="">Unbid</a></li>
+                                   <li><a href="#" title="">Close</a></li>
+                                   <li><a href="#" title="">Hide</a></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="epi-sec">
+                             <ul class="descp">
+                                <li><img src="frontend/images/icon8.png" alt=""><span>Telecom</span></li>
+                                <li><img src="frontend/images/icon9.png" alt=""><span>Ghana</span></li>
+                             </ul>
+                             <ul class="bk-links">
+                                <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
+                                <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                             </ul>
+                          </div>
+                          <div class="job_descp">
+                             <h3>MTN MoMo Pay</h3>
+                             <div class="job_img">
+                               <img src="https://mtn.com.gh/wp-content/uploads/2020/06/GettyImages-865615130_.jpg" alt="">
+                             </div>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <br> <a href="#" title="">view more</a></p>
+                          </div>
+                          <div class="job-status-bar">
+                             <ul class="like-com">
+                                <li>
+                                   <a href="#" class=""><i class="fas fa-heart"></i> Like</a>
+                                   <!-- <img src="frontend/images/liked-img.png" alt=""> -->
+                                   <span></span>
+                                </li>
+                                <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
+                                <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
+                             </ul>
+                             <a href="#"><i class="fas fa-eye"></i>Views 50</a>
+                          </div>
                         </div>
 
                         <!-- advertisment -->
@@ -365,132 +467,112 @@
                                </a>
                              </div>
                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet...
-                               <a href="#" title="">visit site</a>
+                               <br> <a href="#" title="">visit site</a>
                              </p>
                           </div>
                         </div>
                         <!-- advertisment -->
 
                         <div class="post-bar">
-                           <div class="post_topbar">
-                              <div class="usy-dt">
-                                 <img src="frontend/images/resources/us-pic.png" alt="">
-                                 <div class="usy-name">
-                                    <h3>John Doe</h3>
-                                    <span><img src="frontend/images/clock.png" alt="">3 min ago</span>
-                                 </div>
-                              </div>
-                              <div class="ed-opts">
-                                 <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
-                                 <ul class="ed-options">
-                                    <li><a href="#" title="">Edit Post</a></li>
-                                    <li><a href="#" title="">Unsaved</a></li>
-                                    <li><a href="#" title="">Unbid</a></li>
-                                    <li><a href="#" title="">Close</a></li>
-                                    <li><a href="#" title="">Hide</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="epi-sec">
-                              <ul class="descp">
-                                 <li><img src="frontend/images/icon8.png" alt=""><span>Accountant</span></li>
-                                 <li><img src="frontend/images/icon9.png" alt=""><span>Accra, Ghana</span></li>
-                              </ul>
-                              <ul class="bk-links">
-                                 <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
-                                 <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
-                              </ul>
-                           </div>
-                           <div class="job_descp">
-                              <h3>Grievance / Challenge</h3>
-                              <ul class="job-dt">
-                                 <li><span>Directed to </span></li>
-                                 <li><a href="#" title="">MTN Ghana</a></li>
-                              </ul>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="#" title="">view more</a></p>
-                              <ul style="display:none;
-
-                              " class="skill-tags">
-                                 <li><a href="#" title="">HTML</a></li>
-                                 <li><a href="#" title="">PHP</a></li>
-                                 <li><a href="#" title="">CSS</a></li>
-                                 <li><a href="#" title="">Javascript</a></li>
-                                 <li><a href="#" title="">Wordpress</a></li>
-                              </ul>
-                           </div>
-                           <div class="job-status-bar">
-                              <ul class="like-com">
-                                 <li>
-                                    <a href="#"><i class="fas fa-heart"></i> Like</a>
-                                    <img src="frontend/images/liked-img.png" alt="">
-                                    <span>25</span>
-                                 </li>
-                                 <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
-                                 <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
-                              </ul>
-                              <a href="#"><i class="fas fa-eye"></i>Views 50</a>
-                           </div>
+                          <div class="post_topbar">
+                             <div class="usy-dt">
+                                <img src="frontend/images/resources/company-pic.png" alt="">
+                                <div class="usy-name">
+                                   <h3>MTN Ghana</h3>
+                                   <span><img src="frontend/images/clock.png" alt="">3 min ago</span>
+                                </div>
+                             </div>
+                             <div class="ed-opts">
+                                <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                <ul class="ed-options">
+                                   <li><a href="#" title="">Edit Post</a></li>
+                                   <li><a href="#" title="">Unsaved</a></li>
+                                   <li><a href="#" title="">Unbid</a></li>
+                                   <li><a href="#" title="">Close</a></li>
+                                   <li><a href="#" title="">Hide</a></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="epi-sec">
+                             <ul class="descp">
+                                <li><img src="frontend/images/icon8.png" alt=""><span>Telecom</span></li>
+                                <li><img src="frontend/images/icon9.png" alt=""><span>Ghana</span></li>
+                             </ul>
+                             <ul class="bk-links">
+                                <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
+                                <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                             </ul>
+                          </div>
+                          <div class="job_descp">
+                             <h3>MTN MoMo Pay</h3>
+                             <div class="job_img">
+                               <img src="https://mtn.com.gh/wp-content/uploads/2020/06/GettyImages-865615130_.jpg" alt="">
+                             </div>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <br> <a href="#" title="">view more</a></p>
+                          </div>
+                          <div class="job-status-bar">
+                             <ul class="like-com">
+                                <li>
+                                   <a href="#" class=""><i class="fas fa-heart"></i> Like</a>
+                                   <!-- <img src="frontend/images/liked-img.png" alt=""> -->
+                                   <span></span>
+                                </li>
+                                <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
+                                <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
+                             </ul>
+                             <a href="#"><i class="fas fa-eye"></i>Views 50</a>
+                          </div>
                         </div>
 
                         <div class="post-bar">
-                           <div class="post_topbar">
-                              <div class="usy-dt">
-                                 <img src="frontend/images/resources/us-pic.png" alt="">
-                                 <div class="usy-name">
-                                    <h3>John Doe</h3>
-                                    <span><img src="frontend/images/clock.png" alt="">3 min ago</span>
-                                 </div>
-                              </div>
-                              <div class="ed-opts">
-                                 <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
-                                 <ul class="ed-options">
-                                    <li><a href="#" title="">Edit Post</a></li>
-                                    <li><a href="#" title="">Unsaved</a></li>
-                                    <li><a href="#" title="">Unbid</a></li>
-                                    <li><a href="#" title="">Close</a></li>
-                                    <li><a href="#" title="">Hide</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="epi-sec">
-                              <ul class="descp">
-                                 <li><img src="frontend/images/icon8.png" alt=""><span>Accountant</span></li>
-                                 <li><img src="frontend/images/icon9.png" alt=""><span>Accra, Ghana</span></li>
-                              </ul>
-                              <ul class="bk-links">
-                                 <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
-                                 <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
-                              </ul>
-                           </div>
-                           <div class="job_descp">
-                              <h3>Grievance / Challenge</h3>
-                              <ul class="job-dt">
-                                 <li><span>Directed to </span></li>
-                                 <li><a href="#" title="">MTN Ghana</a></li>
-                              </ul>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="#" title="">view more</a></p>
-                              <ul style="display:none;
-
-                              " class="skill-tags">
-                                 <li><a href="#" title="">HTML</a></li>
-                                 <li><a href="#" title="">PHP</a></li>
-                                 <li><a href="#" title="">CSS</a></li>
-                                 <li><a href="#" title="">Javascript</a></li>
-                                 <li><a href="#" title="">Wordpress</a></li>
-                              </ul>
-                           </div>
-                           <div class="job-status-bar">
-                              <ul class="like-com">
-                                 <li>
-                                    <a href="#"><i class="fas fa-heart"></i> Like</a>
-                                    <img src="frontend/images/liked-img.png" alt="">
-                                    <span>25</span>
-                                 </li>
-                                 <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
-                                 <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
-                              </ul>
-                              <a href="#"><i class="fas fa-eye"></i>Views 50</a>
-                           </div>
+                          <div class="post_topbar">
+                             <div class="usy-dt">
+                                <img src="frontend/images/resources/company-pic.png" alt="">
+                                <div class="usy-name">
+                                   <h3>MTN Ghana</h3>
+                                   <span><img src="frontend/images/clock.png" alt="">3 min ago</span>
+                                </div>
+                             </div>
+                             <div class="ed-opts">
+                                <a href="#" title="" class="ed-opts-open"><i class="la la-ellipsis-v"></i></a>
+                                <ul class="ed-options">
+                                   <li><a href="#" title="">Edit Post</a></li>
+                                   <li><a href="#" title="">Unsaved</a></li>
+                                   <li><a href="#" title="">Unbid</a></li>
+                                   <li><a href="#" title="">Close</a></li>
+                                   <li><a href="#" title="">Hide</a></li>
+                                </ul>
+                             </div>
+                          </div>
+                          <div class="epi-sec">
+                             <ul class="descp">
+                                <li><img src="frontend/images/icon8.png" alt=""><span>Telecom</span></li>
+                                <li><img src="frontend/images/icon9.png" alt=""><span>Ghana</span></li>
+                             </ul>
+                             <ul class="bk-links">
+                                <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
+                                <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                             </ul>
+                          </div>
+                          <div class="job_descp">
+                             <h3>MTN MoMo Pay</h3>
+                             <div class="job_img">
+                               <img src="https://mtn.com.gh/wp-content/uploads/2020/06/GettyImages-865615130_.jpg" alt="">
+                             </div>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <br> <a href="#" title="">view more</a></p>
+                          </div>
+                          <div class="job-status-bar">
+                             <ul class="like-com">
+                                <li>
+                                   <a href="#" class=""><i class="fas fa-heart"></i> Like</a>
+                                   <!-- <img src="frontend/images/liked-img.png" alt=""> -->
+                                   <span></span>
+                                </li>
+                                <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comments 15</a></li>
+                                <li><a href="#" class="com"><i class="fas fa-share"></i> Share</a></li>
+                             </ul>
+                             <a href="#"><i class="fas fa-eye"></i>Views 50</a>
+                          </div>
                         </div>
 
                         <div style="display:none;" class="posty">
@@ -543,8 +625,8 @@
                                  <ul class="like-com">
                                     <li>
                                        <a href="#"><i class="fas fa-heart"></i> Like</a>
-                                       <img src="frontend/images/liked-img.png" alt="">
-                                       <span>25</span>
+                                       <!-- <img src="frontend/images/liked-img.png" alt=""> -->
+                                       <span></span>
                                     </li>
                                     <li><a href="#" class="com"><i class="fas fa-comment-alt"></i> Comment 15</a></li>
                                  </ul>
@@ -629,7 +711,58 @@
 
                   <div class="right-sidebar">
 
-                     <div class="ads-profileWrap">
+                      <div class="ads-profileWrap">
+
+                         <div class="user-profy2">
+                           <div class="ourevent-wrapper" style="background: #1098ad;">
+                             <div class="ourevent-header">
+                               <h1>17</h1>
+                               <h3>April</h3>
+                             </div>
+
+                             <div class="ourevent-body">
+                               <p>Accra Start-up Innovation Summit</p>
+                             </div>
+
+                             <div class="ourevent-footer">
+                               <ul>
+                                 <li>7:30PM - 10PM</li>
+                                 <li>@Github Towers - Accra</li>
+                               </ul>
+                             </div>
+                           </div>
+                         </div>
+
+                         <div class="user-profy2">
+
+                           <div class="ourevent-wrapper">
+                             <div class="ourevent-header">
+                               <h1>25</h1>
+                               <h3>April</h3>
+                             </div>
+
+                             <div class="ourevent-body">
+                               <p>Kumasi Start-up Innovation Summit</p>
+                             </div>
+
+                             <div class="ourevent-footer">
+                               <ul>
+                                 <li>7:30PM - 10PM</li>
+                                 <li>@Aleska Towers - Accra</li>
+                               </ul>
+                             </div>
+                           </div>
+
+                         </div>
+
+                      </div>
+
+                  </div>
+
+                  <!-- <div class="right-sidebar">
+
+                      <div class="ads-profileWrap">
+
                        <div class="user-profy2">
                          <div class="widget widget-about">
                             <img src="frontend/images/wd-logo.png" alt="">
@@ -665,9 +798,10 @@
                             </div>
                          </div>
                        </div>
+
                      </div>
 
-                  </div>
+                  </div> -->
 
                   <div class="widget widget-jobs">
                     <div class="sd-title">
@@ -677,9 +811,9 @@
 
                     <div class="polls-list">
                       <div class="pol-question">
-                        <h3>Which city is the cleanest in Ghana?</h3>
+                        <h3>If age is only a state of mind, which category best describes your state of mind right now?</h3>
                       </div>
-                      <div class="pol-answers">
+                      <!-- <div class="pol-answers">
                         <ul>
                           <li> <input type="radio" name="answer" value=""> <span>Accra</span> </li>
                           <li> <input type="radio" name="answer" value=""> <span>Kumasi</span> </li>
@@ -691,7 +825,22 @@
                       <div class="pol-stats">
                         <p>Time remaining: 23HRS</p>
                         <p>Votes: 12k</p>
+                      </div> -->
+                      <div class="polls-progress">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Cheeky child</div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Tormented teenager</div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">Mad mid-lifer</div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Groovy grandparent</div>
+                        </div>
                       </div>
+                      <p> <a href="#" id="voteBtn" class="btn btn-primary btn-sm">Vote</a> </p>
                     </div>
 
 
@@ -702,61 +851,66 @@
                       <h3>Trending News</h3>
                       <i class="la la-ellipsis-v"></i>
                     </div>
-                    <div id="homeJobList" class="jobs-list">
-                      <div class="job-info">
-                        <div class="job-details">
-                          <a href="#">
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut labore</p>
-                          </a>
-                        </div>
-                        <div class="hr-rate">
-                          <span>$25/hr</span>
+                    <div class="suggestions-list">
+                      <div class="suggestion-usd">
+                        <img src="frontend/images/resources/s1.png" alt="">
+                        <div class="sgt-text sgt2Text">
+                          <h4>Achievements Of NADMO Under Nana Addo Dankwa Akufo-Addo’s Government.</h4>
                         </div>
                       </div>
-                      <div class="job-info">
-                        <div class="job-details">
-                          <a href="#">
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt</p>
-                          </a>
-                        </div>
-                        <div class="hr-rate">
-                          <span>$25/hr</span>
+
+                      <div class="suggestion-usd">
+                        <img src="frontend/images/resources/s1.png" alt="">
+                        <div class="sgt-text sgt2Text">
+                          <h4>NIA sets up registration centre at RGD to provide TIN to businesses</h4>
                         </div>
                       </div>
-                      <div class="job-info">
-                        <div class="job-details">
-                          <a href="#">
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt</p>
-                          </a>
+
+                      <div class="view-more">
+                        <a href="#" title="">View More</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="widget widget-jobs">
+                    <div class="sd-title">
+                      <h3>Recent Reviews</h3>
+                      <i class="la la-ellipsis-v"></i>
+                    </div>
+                    <div class="suggestions-list">
+                      <div class="suggestion-usd sugStarMain">
+                        <img src="frontend/images/resources/s1.png" alt="">
+                        <div class="sugStar">
+                          <span>  <i class="fa fa-star"></i> </span>
+                          <span>  <i class="fa fa-star"></i> </span>
+                          <span>  <i class="fa fa-star"></i> </span>
+                          <span>  <i class="fa fa-star"></i> </span>
+                          <span>  <i class="fa fa-star"></i> </span>
                         </div>
-                        <div class="hr-rate">
-                          <span>$25/hr</span>
+                        <div class="sgt-text sgt2Text">
+                          <h4>Kwesi Mintah <b>reviewed</b> Ghana Ports</h4>
+                          <p>“ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.”</p>
                         </div>
                       </div>
-                      <div class="job-info">
-                        <div class="job-details">
-                          <a href="#">
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt</p>
-                          </a>
+
+                      <div class="suggestion-usd sugStarMain">
+                        <img src="frontend/images/resources/s1.png" alt="">
+                        <div class="sugStar">
+                          <span>  <i class="fa fa-star"></i> </span>
+                          <span>  <i class="fa fa-star"></i> </span>
+                          <span>  <i class="fa fa-star"></i> </span>
+                          <span>  <i class="fa fa-star"></i> </span>
+                          <span>  <i class="fa fa-star"></i> </span>
                         </div>
-                        <div class="hr-rate">
-                          <span>$25/hr</span>
+                        <div class="sgt-text sgt2Text">
+                          <h4>Kwesi Mintah <b>reviewed</b> Ghana Ports</h4>
+                          <p>“ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.”</p>
                         </div>
                       </div>
-                      <div class="job-info">
-                        <div class="job-details">
-                          <a href="#">
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt</p>
-                          </a>
-                        </div>
-                        <div class="hr-rate">
-                          <span>$25/hr</span>
-                        </div>
+
+
+                      <div class="view-more">
+                        <a href="#" title="">View More</a>
                       </div>
                     </div>
                   </div>
